@@ -1,0 +1,51 @@
+{
+  "experiments": [
+    {
+      "id": "acid-base-titration",
+      "title": "Acid-Base Titration",
+      "description": "Determine the concentration of an acid by titrating it with a base of known concentration.",
+      "imageUrl": "/images/experiments/titration.png",
+      "tags": ["Chemistry", "Voice Control", "Beginner"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "pendulum-motion",
+      "title": "Pendulum Motion",
+      "description": "Explore the factors that affect the period of a pendulum.",
+      "imageUrl": "/images/experiments/pendulum.png",
+      "tags": ["Physics", "Coming Soon"],
+      "difficulty": "intermediate",
+      "comingSoon": true
+    },
+    {
+      "id": "dna-extraction",
+      "title": "DNA Extraction",
+      "description": "Extract DNA from fruits using household materials.",
+      "imageUrl": "/images/experiments/dna.png",
+      "tags": ["Biology", "Coming Soon"],
+      "difficulty": "advanced",
+      "comingSoon": true
+    }
+  ],
+  "badges": [
+    {
+      "id": "first-experiment",
+      "name": "First Steps",
+      "description": "Complete your first experiment",
+      "imageUrl": "/images/badges/first-experiment.png"
+    },
+    {
+      "id": "voice-master",
+      "name": "Voice Commander",
+      "description": "Successfully use 5 different voice commands",
+      "imageUrl": "/images/badges/voice-master.png"
+    },
+    {
+      "id": "perfect-score",
+      "name": "Perfect Score",
+      "description": "Get 100% on any experiment",
+      "imageUrl": "/images/badges/perfect-score.png"
+    }
+  ],
+  "progress": []
+} 
