@@ -10,31 +10,13 @@
       }
     }
   ],
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "/favicon.ico"
-    },
-    {
-      "src": "/manifest.json",
-      "dest": "/manifest.json"
-    },
-    {
-      "src": "/logo(.*).png",
-      "dest": "/logo$1.png"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+  "rewrites": [
+    { "source": "/static/(.*)", "destination": "/static/$1" },
+    { "source": "/favicon.ico", "destination": "/favicon.ico" },
+    { "source": "/manifest.json", "destination": "/manifest.json" },
+    { "source": "/logo(.*).png", "destination": "/logo$1.png" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "github": {
-    "silent": true
-  },
   "headers": [
     {
       "source": "/(.*)",
@@ -54,5 +36,8 @@
         }
       ]
     }
-  ]
+  ],
+  "github": {
+    "silent": true
+  }
 } 
