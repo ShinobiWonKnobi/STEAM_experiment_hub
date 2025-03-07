@@ -1,144 +1,87 @@
 # STEAM Experiment Hub
 
-A virtual laboratory platform for interactive STEAM (Science, Technology, Engineering, Arts, and Mathematics) experiments designed for students and educators.
+An interactive platform for exploring science, technology, engineering, arts, and mathematics through immersive experiments.
 
 ## Features
 
-- **Interactive Experiments**: Engage with virtual simulations of scientific experiments
-- **Voice Control**: Hands-free operation with voice commands
-- **Gamification**: Earn badges and track progress to enhance learning motivation
-- **Accessibility**: Comprehensive accessibility features including screen reader support, dyslexia-friendly fonts, and more
-- **Responsive Design**: Works seamlessly across desktop and mobile devices
-- **Virtual Assistant**: Built-in chatbot to answer questions and provide guidance
+- Interactive experiments with PhET simulations
+- Voice command integration for hands-free interaction
+- Gamification with badges and progress tracking
+- Accessibility features for inclusive learning
+- Beautiful, immersive UI with modern design
 
-## Getting Started
+## Tech Stack
 
-### Prerequisites
+- React 18
+- TypeScript
+- Material UI
+- React Router
+- Zustand for state management
+- Web Speech API for voice commands
 
-- Node.js (v14 or higher)
-- npm or yarn
+## Deployment on Vercel
 
-### Installation
+This project is configured for seamless deployment on Vercel. Follow these steps to deploy:
 
-1. Clone the repository:
-   ```bash
+1. **Fork or Clone the Repository**
+
+   ```
    git clone https://github.com/yourusername/steam-experiment-hub.git
    cd steam-experiment-hub
    ```
 
-2. Install dependencies:
-   ```bash
+2. **Install Dependencies**
+
+   ```
    npm install
-   # or
-   yarn install
    ```
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
+3. **Local Development**
+
+   ```
+   npm start
    ```
 
-This will start both the React application and the JSON server for the mock API.
+4. **Deploy to Vercel**
+
+   - Install Vercel CLI:
+     ```
+     npm install -g vercel
+     ```
+
+   - Login to Vercel:
+     ```
+     vercel login
+     ```
+
+   - Deploy:
+     ```
+     vercel
+     ```
+
+   - For production deployment:
+     ```
+     vercel --prod
+     ```
+
+   Alternatively, you can connect your GitHub repository to Vercel for automatic deployments.
+
+## Environment Variables
+
+The following environment variables can be configured in Vercel:
+
+- `REACT_APP_API_URL`: URL for the backend API (if applicable)
+- `REACT_APP_ENV`: Environment (development, production)
 
 ## Project Structure
 
-```
-steam-experiment-hub/
-├── public/                  # Static assets
-│   ├── images/              # Images for experiments and UI
-│   └── badges/              # Badge images
-├── src/
-│   ├── components/          # Reusable UI components
-│   ├── features/            # Feature-specific components
-│   │   ├── dashboard/       # Dashboard components
-│   │   ├── experiments/     # Individual experiment components
-│   │   ├── landing/         # Landing page components
-│   │   └── profile/         # User profile components
-│   ├── hooks/               # Custom React hooks
-│   ├── services/            # API and service functions
-│   ├── stores/              # State management (Zustand)
-│   ├── types/               # TypeScript type definitions
-│   └── utils/               # Utility functions
-├── db.json                  # Mock database for development
-└── package.json             # Project dependencies and scripts
-```
-
-## Architecture
-
-The application follows a modular architecture with the following key principles:
-
-1. **Component-Based Design**: UI is built with reusable components
-2. **State Management**: Uses Zustand for global state management
-3. **Error Handling**: Comprehensive error boundaries and graceful fallbacks
-4. **Accessibility**: Built with accessibility in mind from the ground up
-5. **Performance Optimization**: Code splitting, memoization, and other performance techniques
-
-## Key Components
-
-### Experiments
-
-Each experiment is implemented as a standalone component with:
-- Interactive simulation
-- Voice command support
-- Progress tracking
-- Educational content
-
-### Gamification System
-
-The gamification system includes:
-- Badges for achievements
-- Progress tracking
-- Points system
-- Visual feedback for accomplishments
-
-### Accessibility Features
-
-- Screen reader optimization
-- Keyboard navigation
-- High contrast mode
-- Dyslexia-friendly fonts
-- Reduced motion options
-
-## Error Handling
-
-The application implements robust error handling:
-- Error boundaries to prevent UI crashes
-- Graceful fallbacks for failed API calls
-- Detailed error logging
-- User-friendly error messages
-
-## Performance Optimizations
-
-- Code splitting with React.lazy and Suspense
-- Component memoization
-- Efficient state management
-- Optimized rendering
-
-## API Integration
-
-The application uses a RESTful API for data persistence:
-- Experiments data
-- User progress
-- Badges and achievements
-
-During development, a JSON server provides a mock API.
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- `src/components`: Reusable UI components
+- `src/features`: Feature-specific components organized by domain
+- `src/hooks`: Custom React hooks
+- `src/stores`: Zustand state management stores
+- `src/types`: TypeScript type definitions
+- `src/theme.ts`: Material UI theme configuration
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Material-UI for the component library
-- Zustand for state management
-- React Speech Recognition for voice command functionality
+MIT

@@ -153,9 +153,9 @@ const ExperimentDashboard: React.FC = () => {
                     component="h2" 
                     sx={{ fontWeight: 600 }}
                   >
-                    Available Experiments
-                  </Typography>
-                  
+        Available Experiments
+      </Typography>
+      
                   <Chip 
                     icon={<ScienceIcon />} 
                     label={`${completedExperiments} of 3 completed`}
@@ -301,7 +301,7 @@ const ExperimentDashboard: React.FC = () => {
               </Box>
             </Grid>
           </Grid>
-        </Box>
+    </Box>
       </Container>
     </ErrorBoundary>
   );
